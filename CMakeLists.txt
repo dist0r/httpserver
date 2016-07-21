@@ -10,7 +10,7 @@ set (LIBS "-pthread -lev" )
 aux_source_directory(src SRCS)
 
 
-set(SRC_LIST httpserver.cpp)
+set(SRC_LIST src/httpserver.cpp)
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 
 target_link_libraries(${PROJECT_NAME} ${LIBS})
